@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>TEST-WORK</title>
+  </head>
+  <body>
+    <!-- Wrapper -->
+    <div class="wrapper">
+      <div class="container">
+        <header class="header">
+          <h1 class="header__title">Start</h1>
+        </header>
+        <hr class="separator" />
+
+        <!-- Main-content -->
+        <div class="main-content">
+          <!-- Order-status -->
+          <div class="order-status">
+            <div class="order-number">
+              <div class="order-number__ellipse order-number__ellipse--active">
+                <img
+                  src="./img/line-33.svg"
+                  alt="Line"
+                  class="order-number__line"
+                />
+              </div>
+              <span class="order-number__text order-number__text--active"
+                >Стан1</span
+              >
+            </div>
+            <div class="order-number">
+              <div class="order-number__ellipse order-number__ellipse--active">
+                <img
+                  src="./img/line-34.svg"
+                  alt="Line"
+                  class="order-number__line"
+                />
+              </div>
+              <span class="order-number__text order-number__text--active"
+                >Стан2</span
+              >
+            </div>
+            <div class="order-number">
+              <div class="order-number__ellipse">
+                <img
+                  src="./img/line-35.svg"
+                  alt="Line"
+                  class="order-number__line"
+                />
+              </div>
+              <span class="order-number__text">Стан3</span>
+            </div>
+            <div class="order-number">
+              <div class="order-number__ellipse"></div>
+              <span class="order-number__text">Стан4</span>
+            </div>
+            <div class="order-number">
+              <div class="order-number__ellipse"></div>
+              <span class="order-number__text">Стан5</span>
+            </div>
+          </div>
+          <!-- /.order-status -->
+
+          <!-- Order-container -->
+          <div class="order-container">
+            <div class="order-info">
+              <h3 class="order-info__title">Information</h3>
+              <div class="order-info__number">
+                <h4 class="order-info__number-title">Info Number:</h4>
+                <span class="order-info__number-telephone">903049</span>
+              </div>
+              <div class="order-info__place">
+                <h4 class="order-info__place-title">Pick up Place:</h4>
+                <span class="order-info__place-country">Sweden</span>
+              </div>
+            </div>
+            <div class="order-truck">
+              <div class="order-truck__place">
+                <div class="order-truck__info">
+                  <h3 class="order-truck__place-title">We are here</h3>
+                  <p class="order-truck__place-text">Long time to go</p>
+                </div>
+                <img
+                  src="./img/truck-1.svg"
+                  alt="Photo: Truck"
+                  class="order-truck__image"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- /.order-container -->
+
+          <!-- Re-order-container -->
+          <div class="re-order-container">
+            <h3 class="re-order-container__title">Перезамовте Багаж</h3>
+            <p class="re-order-container__text">Дропдаун</p>
+            <div class="re-order-dropdown">
+              <select
+                name="baggage"
+                id="re-order-dropdown__select"
+                class="re-order-dropdown__select"
+              >
+                <option value="" class="re-order-dropdown__option">
+                  Select option
+                </option>
+                <option value="carry-on" class="re-order-dropdown__option">
+                  Ручна поклажа
+                </option>
+                <option
+                  value="checked-baggage"
+                  class="re-order-dropdown__option"
+                >
+                  Зареєстрований багаж
+                </option>
+                <option value="extra-baggage" class="re-order-dropdown__option">
+                  Додатковий багаж
+                </option>
+              </select>
+              <img
+                src="./img/chevron-down.svg"
+                alt=""
+                class="re-order-dropdown__icon"
+              />
+            </div>
+            <p class="re-order-container__text">Дропдаун</p>
+            <div class="re-order-dropdown">
+              <select
+                name="baggage"
+                id="re-order-dropdown__select"
+                class="re-order-dropdown__select"
+              >
+                <option value="" class="re-order-dropdown__option">
+                  Select option
+                </option>
+                <option value="meal" class="re-order-dropdown__option">
+                  Обрати страву
+                </option>
+                <option value="beverage" class="re-order-dropdown__option">
+                  Вибрати напій
+                </option>
+                <option value="snack" class="re-order-dropdown__option">
+                  Додатковий перекус
+                </option>
+              </select>
+              <img
+                src="./img/chevron-down.svg"
+                alt="Icon: chevron-down"
+                class="re-order-dropdown__icon"
+              />
+            </div>
+            <div class="re-order-button">
+              <button class="re-order-button__btn">
+                <span class="re-order-button__text">Done</span>
+              </button>
+            </div>
+          </div>
+          <!-- /.re-order-container -->
+        </div>
+        <!-- /.main-content -->
+      </div>
+      <!-- /.container -->
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <!-- Nav-list -->
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <img
+              src="./img/home-line.svg"
+              alt="Icon: home-line"
+              class="nav-image"
+            />
+            <a href="#" class="nav-list__link">Головна</a>
+          </li>
+          <li class="nav-list__item">
+            <img
+              src="./img/bar-chart-square-02.svg"
+              alt="Icon: bar-chart-square"
+              class="nav-image"
+            />
+            <a href="#" class="nav-list__link">Сторінка1</a>
+          </li>
+          <li class="nav-list__item">
+            <img
+              src="./img/layers-three-01.svg"
+              alt="Icon: layers-three"
+              class="nav-image"
+            />
+            <a href="#" class="nav-list__link">Сторінка2</a>
+          </li>
+          <li class="nav-list__item">
+            <img
+              src="./img/check-done-01.svg"
+              alt="Icon: check-done"
+              class="nav-image"
+            />
+            <a href="#" class="nav-list__link">Сторінка3</a>
+          </li>
+        </ul>
+        <!-- /.nav-list -->
+
+        <!-- Footer-list -->
+        <ul class="footer-list">
+          <li class="footer-list__item">
+            <img
+              src="./img/settings-01.svg"
+              alt="Icon: settings"
+              class="footer-image"
+            />
+            <a href="#" class="footer-list__link">Налаштування</a>
+          </li>
+        </ul>
+        <!-- /.footer-list -->
+      </aside>
+      <!-- /.sidebar -->
+    </div>
+    <!-- /.wrapper -->
+  </body>
+</html>
